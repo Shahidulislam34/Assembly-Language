@@ -8,23 +8,20 @@ main proc
     mov ds, ax
     
     mov ah, 2
-    mov dl, star
+    mov bl, star
     mov cx, 80
     
-    loop:
-    jcxz exit
-    mov bl, dl
+    print:
+    mov ah, 2
+    mov dl, bl
+    int 21h
     
-    mov dl, 10
+    mov dl,10
     int 21h
     mov dl, 13
     int 21h
     
-    mov dl, bl
-    int 21h
-    dec cx
-    
-    jmp loop
+    loop print
     
     exit:
     mov ah, 4ch

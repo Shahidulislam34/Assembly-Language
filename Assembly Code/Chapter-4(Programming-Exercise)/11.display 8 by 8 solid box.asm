@@ -8,7 +8,7 @@ main proc
     mov ax,@data
     mov ds,ax
     
-    mov cx,10
+    mov cx,8
     mov ah,9
     
     for_loop:

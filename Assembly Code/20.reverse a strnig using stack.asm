@@ -1,5 +1,5 @@
 .model small
-.stack 100h
+.stack
 .data
 .code
 main proc

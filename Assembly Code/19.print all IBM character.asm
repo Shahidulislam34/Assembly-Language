@@ -9,6 +9,8 @@ main proc
     sub dx, dx
     mov ah, 2
     
+    ;0 to 255
+    
     while:
     cmp dx, 256d
     je exit

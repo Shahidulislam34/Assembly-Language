@@ -8,7 +8,7 @@ main proc
     mov ds,ax
     
     mov ax,0
-    cmp ax,2
+    cmp ax,0
     jge equal
     jmp exit
     

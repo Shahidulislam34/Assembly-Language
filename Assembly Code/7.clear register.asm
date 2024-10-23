@@ -13,6 +13,7 @@ main proc
     
     mov ah,2
     mov dx,ax
+    add dx, 48
     int 21h
     
     

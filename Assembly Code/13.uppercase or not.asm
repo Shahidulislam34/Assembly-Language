@@ -1,8 +1,8 @@
 .model small
 .stack
 .data
-gre dw 10, 13,"Greater","Character","$"
-ngre dw 10, 13, "Not Greater$"
+gre db 10, 13,"Greater","$"
+ngre db 10, 13, "Not Greater$"
 .code
 main proc
     mov ax, @data

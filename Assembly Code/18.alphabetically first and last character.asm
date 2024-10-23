@@ -46,11 +46,13 @@ main proc
     int 21h
     mov ah, 2
     mov dl, st
-    int 21h
+    int 21h 
+    
     mov dl,10
     int 21h
     mov dl,13
     int 21h
+    
     mov ah,9
     lea dx, lstcap
     int 21h
